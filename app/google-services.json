@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "52066288547",
+    "project_id": "miitchatapp",
+    "storage_bucket": "miitchatapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52066288547:android:1243cd7d9db74833b09016",
+        "android_client_info": {
+          "package_name": "com.example.miitchatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52066288547-ctrjcjq8taf7c3s38g601jedn1ucpqh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrZUSy8TcU4lkmDl7EHus8czpaaaXoma4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52066288547-ctrjcjq8taf7c3s38g601jedn1ucpqh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/profile"
+        android:layout_marginTop="10dp"
+        android:id="@+id/msg_profile_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="250dp"
+        android:layout_toEndOf="@id/msg_profile_image"
+        android:text="Receiver msg here"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/msg_receiver_layout"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="4dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/msg_receiver_input"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"
+        android:id="@+id/msg_sender_image_view"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/msg_receiver_image_view"/>
+
+    <TextView
+        android:id="@+id/msg_sender_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="250dp"
+        android:layout_alignParentEnd="true"
+        android:text="Sender msg here"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/msg_sender_layout"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentTop="true"/>
+</RelativeLayout>

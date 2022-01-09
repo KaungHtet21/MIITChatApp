@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/register_background2">
+        <TextView
+            android:id="@+id/warn_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200sp"
+            android:layout_marginStart="20sp"
+            android:text="*Enter email"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="60dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/warn_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="20sp"
+            android:text="*Enter password"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <EditText
+            android:id="@+id/register_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="60dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/warn_confirm_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="20sp"
+            android:text="*Confirm password"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <EditText
+            android:id="@+id/register_confirm_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="60dp"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="20sp"
+            android:text="*Click agreement"
+            android:textSize="16sp"
+            android:id="@+id/warn_agree"
+            android:visibility="invisible"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I Agree"
+            android:textSize="16sp"
+            android:layout_marginStart="20sp"/>
+
+        <Button
+            android:id="@+id/create_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+            android:text="Create"
+            android:enabled="true"
+            android:textColor="@android:color/white"
+            android:background="@drawable/buttons"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/already_have_an_acc_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Already have an account"
+            android:layout_marginTop="6dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</ScrollView>

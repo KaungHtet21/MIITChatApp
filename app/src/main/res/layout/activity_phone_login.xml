@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PhoneLoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+
+            <com.hbb20.CountryCodePicker
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                app:ccp_defaultNameCode="MM"
+                android:id="@+id/ccp"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:hint="Enter phone number"
+                android:textAlignment="center"
+                android:background="@null"
+                android:inputType="phone"
+                android:id="@+id/phone_number_input"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/ver_code_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/inputs"
+        android:drawableStart="@drawable/password"
+        android:hint="Enter verification code"
+        android:inputType="phone"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/send_ver_code_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/buttons"
+        android:text="Send verification code"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/verify_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/buttons"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"/>
+</LinearLayout>
